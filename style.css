@@ -1,0 +1,61 @@
+body {
+	background: linear-gradient(to right, #73008c, #2b8252);
+}
+.header{
+	color:white;
+	margin-left: 116px;
+	font-family: "Times New Roman", Times, serif;
+	
+}
+.container legend{
+	color:white;
+	font-family: "Times New Roman", Times, serif;
+	font-size:30px;
+}
+
+.container h2{
+	color:white;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.container .table th{
+	color:white;
+	font-family: "Times New Roman", Times, serif;
+	font-size:18px;
+}
+
+.container p{
+	color:white;
+	font-size:18px;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.main img{
+	position: absolute;
+	top: 10px;
+	left: 30px;
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+
+.main #logo{
+	position: absolute;
+	top: 250px;
+	left:-130px;
+	font-size: 90px;
+	color: red;
+	text-transform: capitalize;
+	font-family:'Brush Script MT', cursive;
+	transform: rotate(270deg);
+	z-index:-1;
+}
+
+.container .table .crtBtn button{
+	
+	position: absolute;
+	top: 250px;
+	left:-130px;
+	color:red;
+	
+}

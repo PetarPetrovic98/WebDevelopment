@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Streamy web player</title>
+
+    <link rel="stylesheet" href="audioplayer.css" />
+	<script src="https://kit.fontawesome.com/12c29c871e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="main">
+    <img src="img/Vanamo_Logo.png"></img>
+		<p id="logo">audio player</p>
+		<a id="aboutUs" href="aboutUs.php">About Us</a>
+		<a id="logout" href="logout.php">Logout</a>
+		<!--- left part --->
+		<div class="left">
+			<!--- song img --->
+			<img id="track_image" src=""></img>
+			<!--- left volume --->
+			<div class="volume">
+			<p><span id="value"></span></p>
+				<i class="fa fa-volume-up" id="volume_icon" onclick="mute_sound(this)"></i>
+				<input type="range" min="0" max="100" value="0" id="volumeValue" class="slider">
+			</div>
+		</div>
+    <!--- right part --->
+		<div class="right">
+			<div class="show_song_no">1/1</div>
+			<!--- song title --->
+			<p id="title"></p>
+      	<p id="author"></p>
+        	<p id="description"></p>
+      <div class="audio-wrapper">
+        <audio
+          src=""
+          preload="metadata"
+          id="audioEl"
+        ></audio
+      </div>
+			<!--- middle part --->
+			<div class="middle">
+				<button  id="prev-btn"><i class="fas fa-step-backward"></i></button>
+				<button id="play-btn">Play</button>
+				<button  id="next-btn"><i class="fas fa-step-forward"></i></button>
+			</div>
+
+		
+		
+			<!--- song duration --->
+			<div class="duration">
+				<div class="current-time">00:00</div>
+				<input type="range" min="0" max="100" value="0" id="duration_slider" onchange="seekTo()">
+				<div class="total-duration"></div>
+			</div>
+		</div>
+    </div>
+  </body>
+  <script src="crud-webservice.js"></script>
+  <script src="main.js"></script>
+</html>

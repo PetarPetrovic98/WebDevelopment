@@ -13,7 +13,7 @@
   at HKR and are striving to graduate.<br>
   I hope you like it! <br>
   :D</p>
-  <a id="back" href="audioClientPage.html"><--Back</a>
+  <a id="back" href="audioClientPage.php"><--Back</a>
 </div>
 
 <h2 style="text-align:center">Our Team</h2>
@@ -21,7 +21,7 @@
   <div class="column">
     <div class="card">
 
-      <img src="pictures/vincenzoBuonoProfilePicture.jpg" alt="Vincenzo" style="width:100%">
+      <img src="img/vincenzoBuonoProfilePicture.jpg" alt="Vincenzo" style="width:100%">
       <div class="container">
         <h2>Vincenzo Buono</h2>
         <p class="title">Student</p>
@@ -39,7 +39,7 @@
 
   <div class="column">
     <div class="card">
-      <img src="pictures/akliluBerheProfilePicture.jpg" alt="Aklilu" style="width:100%">
+      <img src="img/akliluBerheProfilePicture.jpg" alt="Aklilu" style="width:100%">
       <div class="container">
         <h2>Aklilu Ghebremedhin</h2>
         <p class="title">Student</p>
@@ -56,7 +56,7 @@
   
   <div class="column">
     <div class="card">
-      <img src="pictures/petarPetrovicProfilePicture.jpg" alt="Petar" style="width:100%">
+      <img src="img/petarPetrovicProfilePicture.jpg" alt="Petar" style="width:100%">
       <div class="container">
         <h2>Petar Petrovic</h2>
         <p class="title">Student</p>
