@@ -43,30 +43,6 @@
           <button type="submit">Sign Up</button>
           <a href="index.php" class="ca">Already have an account?</a>
      </form>
-     <script>
-          const form = document.querySelector('.form');
-          async function postUser(user) {
-               const response = await fetch('http://localhost:3001/users', {
-                    method: 'POST',
-                    mode: 'cors',
-                    cache: 'no-cache',
-                    headers: {
-                         'Content-Type': 'application/x-www-form-urlencoded',
-                    },
-                    body: user,
-
-               });
-               return response.json();
-          }
-          form.addEventListener("submit", (e) => {
-               e.preventDefault();
-               postUser($('form').serialize()).then((res) => {
-                    console.log('response from server: ', res)
-                    $('form').submit();
-               })
-          });
-     </script>
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </body>
 
 </html>
