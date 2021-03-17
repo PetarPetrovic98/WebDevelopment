@@ -11,25 +11,27 @@
     <img src="img/Vanamo_Logo.png"></img>
 		<p id="logo">audio player</p>
 		<a id="aboutUs" href="aboutUs.php">About Us</a>
-		<a id="logout" href="logout.php">Logout</a>
+		<a id="logout" href="signout.php">Logout</a>
 		<!--- left part --->
 		<div class="left">
 			<!--- song img --->
 			<img id="track_image" src=""></img>
 			<!--- left volume --->
 			<div class="volume">
-			<p><span id="value"></span></p>
+			<p><span id="current-volume"></span></p>
 				<i class="fa fa-volume-up" id="volume_icon" onclick="mute_sound(this)"></i>
-				<input type="range" min="0" max="100" value="0" id="volumeValue" class="slider">
+				<input type="range" min="0" max="100" value="0" id="volume-slider" class="slider">
 			</div>
 		</div>
     <!--- right part --->
 		<div class="right">
-			<div class="show_song_no">1/1</div>
+			<div class="show_song_no-wrapper"><span class="current-track"></span>/<span class="total-track"></span></div>
 			<!--- song title --->
-			<p id="title"></p>
-      	<p id="author"></p>
-        	<p id="description"></p>
+			<div class="track-info">
+				<p id="title"></p>
+				<p id="author"></p>
+				<p id="description"></p>
+			</div>
       <div class="audio-wrapper">
         <audio
           src=""
