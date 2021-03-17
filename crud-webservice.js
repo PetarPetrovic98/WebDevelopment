@@ -17,7 +17,7 @@ class crudWebservice {
     const audiobooks = await response.json();
     return audiobooks;
   }
-  async fetchAudiotrack(trackid) {
+  async _fetchAudiotrack(trackid) {
     const response = await fetch(
       this.host + ':' + this.port + '/audiotracks/' + trackid
     );
@@ -32,11 +32,24 @@ class crudWebservice {
       });
     });
   };
+  fetchAudiotrack = (audiobookID) => {
+    return new Promise((resolve, reject) => {
+      this.fetchChapters(audiobookID).then((chapters) => {
+        //console.log('at', chapters);
+        resolve(chapters.chapters[0].audiotrackID);
+      });
+    });
+  };
+
+  getAudioURI = (audiotrackID) => {
+    //console.log('uri', 'http://localhost:3001/audiotracks/' + audiotrackID);
+    return 'http://localhost:3001/audiotracks/' + audiotrackID;
+  };
 
   fetchData = () => {
     return new Promise((resolve, reject) => {
       this.fetchAudiobooks().then((res) => {
-        console.log('audiobooks:', res);
+        // console.log('audiobooks:', res);
         this.audiobooks = res.data;
         for (let i = 0; i < this.audiobooks.length; i++) {
           this.fetchChapters(this.audiobooks[i]._id).then((chapters) => {
