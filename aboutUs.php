@@ -13,7 +13,7 @@
   at HKR and are striving to graduate.<br>
   I hope you like it! <br>
   :D</p>
-  <a id="back" href="audioClientPage.php"><--Back</a>
+  <a id="back" href="index.html"><--Back</a>
 </div>
 
 <h2 style="text-align:center">Our Team</h2>
