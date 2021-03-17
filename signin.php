@@ -36,7 +36,8 @@ if (isset($_POST['uname']) && isset($_POST['password'])) {
             	$_SESSION['name'] = $row['name'];
             	$_SESSION['id'] = $row['id'];
 				//when user name and password is successfull, we go to homepage 
-            	header("Location: homePage.php");
+            	//header("Location: homePage.php");
+				header("Location: index.html");
 		        exit();
 				//when user name and password is incorrect, we will be notified 
             }else{
